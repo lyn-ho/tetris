@@ -1,15 +1,21 @@
 <template>
   <div id="app">
-    {{message}}
+    <shell></shell>
   </div>
 </template>
 
 <script>
+
+import shell from './components/shell'
+
 export default {
   data() {
     return {
-      message: 'hello'
     }
+  },
+
+  components: {
+    shell
   }
 }
 </script>

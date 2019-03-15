@@ -24,6 +24,10 @@ module.exports = {
     ]
   },
 
+  resolve: {
+    extensions: ['.js', '.vue', '.css', '.less']
+  },
+
   'devServer': {
     open: true,
     hot: true
