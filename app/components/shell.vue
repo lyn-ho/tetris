@@ -1,8 +1,8 @@
 <template>
   <div class="tetris-shell">
     <div class="tetris-shell-content">
+      <screen-container></screen-container>
       <control-container></control-container>
-      <display-container></display-container>
     </div>
   </div>
 </template>
@@ -10,13 +10,13 @@
 <script>
 
 import controlContainer from './control-container'
-import displayContainer from './display-container'
+import screenContainer from './screen-container'
 
 export default {
   
   components: {
     controlContainer,
-    displayContainer
+    screenContainer
   }
 }
 </script>
@@ -24,8 +24,6 @@ export default {
 <style lang="less">
 
 .tetris-shell {
-  
-
   display: flex;
 
   justify-content: center;
@@ -33,8 +31,16 @@ export default {
 
   &-content {
     width: 480px;
-    height: 960px;
     border: 1px solid black;
+
+    background-color: crimson;
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+
+    justify-content: space-around;
+    align-items: center;
   }
 }
 

@@ -21,6 +21,11 @@ export default {
 </script>
 
 <style lang="less">
+body, div, * {
+  padding: 0;
+  margin: 0;
+}
+
 #app {
   font-size: 16px;
 }
